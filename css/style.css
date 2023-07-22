@@ -1,0 +1,76 @@
+body {
+  background-color: #f7ecde;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  background-color: #f7ecde;
+}
+
+section h1 {
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: #352e28;
+  isolation: isolate;
+}
+
+section h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+section h1:hover::before {
+  height: 50%;
+}
+
+.bookmark-border {
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+
+.bookmark-border h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+table {
+  vertical-align: middle !important;
+}
+
+.btn-submit {
+  background-color: #d1512d;
+  color: #fff;
+  border: 1px solid #d1512d;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.btn-submit:hover {
+  background-color: #bb4120;
+  color: #fff;
+  border-color: #a03315;
+}
+
+#btn-visit{
+  background-color: #8A9E23 !important;
+}
